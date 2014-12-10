@@ -1,0 +1,14 @@
+<div class="container" ng-controller="CodeCtrl">
+    <div class="jumbotron">
+      <h1>Try to code.</h1>
+    </div>
+    <div>
+         <div>
+             <textarea class="form-control" rows="10" ng-model="code.source"></textarea>
+         </div>
+         <div type="button" class="btn btn-primary" ng-click="code.submit()">Submit</div>
+         <div>
+             {{code.result}}
+         </div>
+    </div>
+</div>
